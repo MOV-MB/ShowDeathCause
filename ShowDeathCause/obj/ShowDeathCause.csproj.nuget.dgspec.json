@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Storm\\source\\repos\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj": {}
+    "E:\\GitHubResp\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Storm\\source\\repos\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj": {
+    "E:\\GitHubResp\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Storm\\source\\repos\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj",
+        "projectUniqueName": "E:\\GitHubResp\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj",
         "projectName": "ShowDeathCause",
-        "projectPath": "C:\\Users\\Storm\\source\\repos\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj",
+        "projectPath": "E:\\GitHubResp\\ShowDeathCause\\ShowDeathCause\\ShowDeathCause.csproj",
         "packagesPath": "C:\\Users\\Storm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Storm\\source\\repos\\ShowDeathCause\\ShowDeathCause\\obj\\",
+        "outputPath": "E:\\GitHubResp\\ShowDeathCause\\ShowDeathCause\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",

@@ -1,12 +1,10 @@
-﻿using System;
-using BepInEx;
+﻿using BepInEx;
 using RoR2;
-using ComboSkill = On.RoR2.ComboSkill;
 
 namespace ShowDeathCause
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.MyCompanyName.ShowDeathCause", "ShowDeathCause", "1.0.0")]
+    [BepInPlugin("com.Storm312.ShowDeathCause", "ShowDeathCause", "1.0.0")]
     public class ShowDeathCause : BaseUnityPlugin
     {
         public void Awake()

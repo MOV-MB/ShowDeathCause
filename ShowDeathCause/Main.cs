@@ -5,7 +5,7 @@ using RoR2;
 namespace ShowDeathCause
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.MyCompanyName.MyModName", "ShowDeathCause", "1.0.0")]
+    [BepInPlugin("com.MyCompanyName.ShowDeathCause", "ShowDeathCause", "1.0.0")]
     public class ShowDeathCause : BaseUnityPlugin
     {
         public void Awake()

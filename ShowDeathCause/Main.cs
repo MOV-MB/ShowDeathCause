@@ -10,7 +10,12 @@ namespace ShowDeathCause
     {
         public void Awake()
         {
+            On.RoR2.GlobalEventManager.OnPlayerCharacterDeath += GlobalEventManager_OnPlayerCharacterDeath;
+        }
 
+        private void GlobalEventManager_OnPlayerCharacterDeath(On.RoR2.GlobalEventManager.orig_OnPlayerCharacterDeath orig, GlobalEventManager self, DamageInfo damageInfo, UnityEngine.GameObject victim, NetworkUser victimNetworkUser)
+        {
+            throw new NotImplementedException();
         }
     }
 }

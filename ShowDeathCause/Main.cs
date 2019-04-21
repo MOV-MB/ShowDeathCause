@@ -11,11 +11,29 @@ namespace ShowDeathCause
         public void Awake()
         {
             On.RoR2.GlobalEventManager.OnPlayerCharacterDeath += GlobalEventManager_OnPlayerCharacterDeath;
+            
         }
 
         private void GlobalEventManager_OnPlayerCharacterDeath(On.RoR2.GlobalEventManager.orig_OnPlayerCharacterDeath orig, GlobalEventManager self, DamageInfo damageInfo, UnityEngine.GameObject victim, NetworkUser victimNetworkUser)
         {
-            throw new NotImplementedException();
+            orig(self, damageInfo, victim, victimNetworkUser);
+            CharacterBody component = victim.GetComponent<CharacterBody>();    // <=
+            NetworkUser networkUser = Util.LookUpBodyNetworkUser(component);  // oh habe gar nicht realisiert 
+
+            string deathMessage = $"Killed by <color=#FF8000>{damageInfo.attacker}</color> with {damageInfo.inflictor}";
+
+            if (!networkUser) return;
+            Chat.SendBroadcastChat(new Chat.SimpleChatMessage
+            {
+              
+                baseToken = deathMessage
+
+
+            });
+
         }
+
+        
     }
 }
+// push?

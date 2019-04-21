@@ -20,7 +20,7 @@ namespace ShowDeathCause
             CharacterBody component = victim.GetComponent<CharacterBody>();    
             NetworkUser networkUser = Util.LookUpBodyNetworkUser(component);  
 
-            string deathMessage = $"Killed by <color=#FF8000>{damageInfo.attacker.GetComponent<CharacterBody>().GetDisplayName()}</color> with {damageInfo.inflictor.GetComponent<GenericSkill>().skillName}"; 
+            string deathMessage = $"Killed by <color=#FF8000>{damageInfo.attacker.GetComponent<CharacterBody>().GetDisplayName()}</color> with ({damageInfo.inflictor.GetComponent<GenericSkill>().skillName})"; 
 
             if (!networkUser) return;
             Chat.SendBroadcastChat(new Chat.SimpleChatMessage
